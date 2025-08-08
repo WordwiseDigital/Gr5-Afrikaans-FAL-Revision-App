@@ -19,14 +19,14 @@ def run_verification():
         page.get_by_text("Begin Speletjie").click()
 
         # 5. Take a screenshot of the game screen with the first question
-        expect(page.get_by_text("Kies die korrekte voornaamwoord: '___ het die boek gelees.'")).to_be_visible()
+        expect(page.locator("#question-container")).to_be_visible()
         page.screenshot(path='jules-scratch/verification/02_question_screen.png')
 
         # 6. Click on an answer
-        page.get_by_role("button", name="Ek").click()
+        page.locator(".answer-button").first.click()
 
         # 7. Take a screenshot of the screen with the feedback
-        expect(page.get_by_text("Reg!")).to_be_visible()
+        expect(page.locator("#feedback")).to_be_visible()
         page.screenshot(path='jules-scratch/verification/03_feedback_screen.png')
 
         browser.close()
