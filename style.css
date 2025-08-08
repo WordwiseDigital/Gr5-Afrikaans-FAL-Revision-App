@@ -1,0 +1,124 @@
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #2E8B57);
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+header h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+#start-screen h2 {
+    color: #28a745;
+}
+
+#topic-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.topic-button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.topic-button.selected {
+    background-color: #e0a800;
+}
+
+.topic-button:hover {
+    background-color: #e0a800;
+}
+
+#start-button, #next-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover, #next-button:hover {
+    background-color: #0056b3;
+}
+
+#game-screen {
+    margin-top: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-button {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-button:hover {
+    background-color: #138496;
+}
+
+.answer-button.correct {
+    background-color: #28a745;
+}
+
+.answer-button.incorrect {
+    background-color: #dc3545;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#score-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
